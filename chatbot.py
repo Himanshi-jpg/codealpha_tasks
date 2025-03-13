@@ -42,7 +42,7 @@ def chatbot_response(user_input):
     return "I'm not sure how to respond to that. Can you ask something else?"
 
 def get_weather(city):
-    api_key = "8025cd789f3a486392172935250203"  # Replace with a valid API key
+    api_key = "8025cd789f3a486392172935250203"  # API key
     url = f"http://api.weatherapi.com/v1/current.json?key={api_key}&q={city}"
     try:
         response = requests.get(url).json()
